@@ -1,0 +1,261 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+    
+nav {
+    justify-content: center;
+    background-color: #2196F3;
+    padding: 20px 20px;
+}
+
+nav a {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #94b9e0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+    
+.index_text {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.index_text::before {
+    content: "\1F4BB";
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+p {
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-form-positions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+    
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+    
+button {
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+    
+button:hover {
+    background-color: #1976D2;
+}
+    
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+    
+.box {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+}
+    
+#comparison-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+    
+#compare-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+    
+#compare-btn-positions {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+    
+.modal-content {
+    background-color: #e3f2fd;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #2196F3;
+    width: 80%;
+}
+    
+.close {
+    color: #2196F3;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+#comparison-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+    
+.comparison-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#results-positions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+    
+.company {
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.position {
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+    
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.compare-table th {
+    background-color: #2196F3;
+    font-weight: bold;
+    color: white;
+}
+
+.compare-table td ul {
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.tech-toggle {
+    display: block;
+    margin-top: 8px;
+    padding: 4px 8px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.tech-toggle:hover {
+    background-color: #1976D2;
+}
+
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; /* add "auto" to center horizontally */
+    width: 800px;
+    height: 600px;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="companies">Companies Comparison</a>
+        <a href="positions">Positions Comparison</a>
+    </nav>
+
+    <h1>Welcome to our job comparison site!</h1>
+    <p class="index_text">Every year, millions of people find themselves unemployed or seeking better job opportunities. Our site helps you
+        find jobs easier and compare them to know the right one for you. Choose one of the options in the navbar above
+        to start comparing.</p>
+
+
+    <div class="chart">
+        <canvas id="openPositionsChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="/static/js/chart.js"></script>
+
+</body>
+
+</html>

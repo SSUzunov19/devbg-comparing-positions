@@ -1,0 +1,34 @@
+CREATE DATABASE job_scraping;
+
+USE job_scraping;
+
+CREATE TABLE jobs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  company VARCHAR(255),
+  location VARCHAR(255),
+  date VARCHAR(255),
+  link VARCHAR(255),
+  categories VARCHAR(255),
+  job_description TEXT,
+  min_salary INT,
+  max_salary INT,
+  is_deleted BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE companies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  link VARCHAR(255),
+  activity TEXT,
+  sector TEXT,
+  central_office TEXT,
+  technologies TEXT,
+  year_of_establishment CHAR(255),
+  global_employees CHAR(255),
+  established_in_bulgaria CHAR(255),
+  employees_in_bulgaria CHAR(255),
+  offices_in_bulgaria CHAR(255),
+  iT_employees_in_bulgaria CHAR(255),
+  is_deleted BOOLEAN DEFAULT FALSE
+);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Comparison</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="companies">Companies Comparison</a>
+        <a href="positions">Positions Comparison</a>
+    </nav>
+
+    <h1>Company Comparison</h1>
+    <form id="search-form">
+        <input type="text" name="search" placeholder="Search for companies...">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="container" id="comparison-wrapper">
+        <h2>Companies to Compare</h2>
+        <div class="container" id="comparison-container"></div>
+    </div>
+    <button id="compare-btn" disabled>Compare</button>
+    <div id="comparison-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="comparison-wrapper">
+                <div class="company" id="company1"></div>
+                <div class="company" id="company2"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="results"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/companies.js"></script>
+</body>
+</html>
